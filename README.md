@@ -18,7 +18,8 @@ EXPORT_USERNAME='spotify-id-of-account-you-are-exporting-from'
 IMPORT_USERNAME='spotify-id-of-account-you-are-importing-to'
 ```
 After that you you can run `export.py` that creates a json file that has spotify ids of all the playlists and artists that you followed, songs saved in liked songs, albums saved, playlists created.  
-After that you can run `import.py` that reads the json files created and follows artists and playlists, likes albums, creates playlists and likes songs. It saves the arrangement of liked songs and your playlists and the songs inside the playlists. 
+After that you can run `import.py` that reads the json files created and follows artists and playlists, likes albums, creates playlists and likes songs. It saves the arrangement of liked songs and your playlists and the songs inside the playlists.  
+First time running each script a browser will open so you could login with your account and in terminal you will be prompted to input the url that you are redirected to.
 
 ## TODO
   - refactor my codes
