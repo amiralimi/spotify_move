@@ -1,7 +1,7 @@
 # Spotify Move
 Scripts to move library from one Spotify account to another account.
 
-## Instalation
+## Installation
 You can install needed packages using the following command.
 ```
 pip install -r requirements.txt
@@ -9,8 +9,8 @@ pip install -r requirements.txt
 
 ## Running
 For running this scripts first you need to create a developer app in [Spotify developer dashboard](https://developer.spotify.com/dashboard/).  
-After that you need to go to settings of the app that you created and put a url in `Redirect URLs`. I put `http://localhost`. If you use someother URL you need to change `redirect_uri` in `import.py` and `export.py` file.  
-After that you need to craete an environment file in base folder named `.env` with these arguments in it.
+After that you need to go to settings of the app that you created and put a url in `Redirect URLs`. I put `http://localhost`. If you use some other URL you need to change `redirect_uri` in `import.py` and `export.py` file.  
+After that you need to create an environment file in base folder named `.env` with these arguments in it.
 ```
 CLIENT_ID='your-spotify-developer-app-client-id'
 CLIENT_SECRET='your-spotify-developer-app-client-secret'
