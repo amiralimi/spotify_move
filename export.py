@@ -37,11 +37,11 @@ playlists = sp.current_user_playlists()
 
 while True:
     for playlist in playlists['items']:
-        library['ordered_playlists'].append(playlist['uri'])
+        library['ordered_playlists'].append(playlist['id'])
         if playlist['owner']['id'] == EXPORT_USERNAME:
-            library['user_playlists'].append(playlist['uri'])
+            library['user_playlists'].append(playlist['id'])
         else:
-            library['followed_playlists'].append(playlist['uri'])
+            library['followed_playlists'].append(playlist['id'])
     if not playlists['next']:
         break
     playlists = sp.next(playlists)
@@ -50,7 +50,7 @@ saved_albums = sp.current_user_saved_albums()
 
 while True:
     for album in saved_albums['items']:
-        library['saved_albums'].append(album['album']['uri'])
+        library['saved_albums'].append(album['album']['id'])
     if not saved_albums['next']:
         break
     saved_albums = sp.next(saved_albums)
@@ -59,7 +59,7 @@ saved_tracks = sp.current_user_saved_tracks()
 
 while True:
     for track in saved_tracks['items']:
-        library['saved_tracks'].append(track['track']['uri'])
+        library['saved_tracks'].append(track['track']['id'])
     if not saved_tracks['next']:
         break
     saved_tracks = sp.next(saved_tracks)
@@ -69,7 +69,7 @@ followed_artists = sp.current_user_followed_artists()
 while True:
     followed_artists = followed_artists['artists']
     for artist in followed_artists['items']:
-        library['followed_artists'].append(artist['uri'])
+        library['followed_artists'].append(artist['id'])
     if not followed_artists['next']:
         break
     followed_artists = sp.next(followed_artists)
