@@ -49,7 +49,7 @@ for track_id in saved_tracks:
 total = len(library['saved_albums'])
 for i in range(0, total, 50):
     batch = library['saved_albums'][i:min(i + 50, total)]
-sp.current_user_saved_albums_add(albums=batch)
+    sp.current_user_saved_albums_add(albums=batch)
 
 library['ordered_playlists'].reverse()
 playlist_map = []
