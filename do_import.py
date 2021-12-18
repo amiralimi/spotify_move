@@ -16,8 +16,7 @@ load_dotenv()
 CLIENT_ID = os.getenv('CLIENT_ID')
 CLIENT_SECRET = os.getenv('CLIENT_SECRET')
 IMPORT_USERNAME = os.getenv('IMPORT_USERNAME')
-
-REDIRECT_URI = 'http://localhost'
+REDIRECT_URI = os.getenv('REDIRECT_URI')
 
 
 def import_():

@@ -14,7 +14,7 @@ CLIENT_ID = os.getenv('CLIENT_ID')
 CLIENT_SECRET = os.getenv('CLIENT_SECRET')
 EXPORT_USERNAME = os.getenv('EXPORT_USERNAME')
 
-REDIRECT_URI = 'http://localhost'
+REDIRECT_URI = os.getenv('REDIRECT_URI')
 
 
 def export():
